@@ -1,0 +1,662 @@
+[I 2025-02-13 13:11:15.748 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-02-13 13:11:15.756 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2025-02-13 13:11:15.760 LabApp] 'allow_origin' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2025-02-13 13:11:15.760 LabApp] 'port_retries' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2025-02-13 13:11:15.763 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-02-13 13:11:15.771 ServerApp] notebook | extension was successfully linked.
+[I 2025-02-13 13:11:18.523 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-02-13 13:11:18.852 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-02-13 13:11:18.856 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-02-13 13:11:18.860 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-02-13 13:11:18.963 LabApp] JupyterLab extension loaded from /om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyterlab
+[I 2025-02-13 13:11:18.964 LabApp] JupyterLab application directory is /net/vast-storage/scratch/vast/evlab/jackking/anaconda/envs/superurop/share/jupyter/lab
+[I 2025-02-13 13:11:18.968 LabApp] Extension Manager is 'pypi'.
+[I 2025-02-13 13:11:19.264 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-02-13 13:11:19.285 ServerApp] notebook | extension was successfully loaded.
+[I 2025-02-13 13:11:19.286 ServerApp] Serving notebooks from local directory: /net/vast-storage/scratch/vast/evlab/jackking/straightening_dynamics/scripts
+[I 2025-02-13 13:11:19.286 ServerApp] Jupyter Server 2.15.0 is running at:
+[I 2025-02-13 13:11:19.286 ServerApp] http://node102:8081/lab?token=e6b4c58086b2239ddfae7c46b8851efd1430cc9c984440f8
+[I 2025-02-13 13:11:19.286 ServerApp]     http://127.0.0.1:8081/lab?token=e6b4c58086b2239ddfae7c46b8851efd1430cc9c984440f8
+[I 2025-02-13 13:11:19.286 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-02-13 13:11:19.310 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///rdma/vast-rdma/vast-home/jackking/.local/share/jupyter/runtime/jpserver-1957924-open.html
+    Or copy and paste one of these URLs:
+        http://node102:8081/lab?token=e6b4c58086b2239ddfae7c46b8851efd1430cc9c984440f8
+        http://127.0.0.1:8081/lab?token=e6b4c58086b2239ddfae7c46b8851efd1430cc9c984440f8
+[I 2025-02-13 13:11:19.427 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2025-02-13 13:48:10.491 ServerApp] 302 GET / (@172.16.24.234) 0.63ms
+[I 2025-02-13 13:48:10.558 ServerApp] 302 GET / (@172.16.24.234) 0.49ms
+[I 2025-02-13 13:48:10.559 ServerApp] 302 GET / (@172.16.24.234) 0.39ms
+[I 2025-02-13 13:48:11.372 LabApp] 302 GET /lab? (@172.16.24.234) 0.83ms
+[I 2025-02-13 13:48:11.373 LabApp] 302 GET /lab? (@172.16.24.234) 0.67ms
+[I 2025-02-13 13:48:11.373 LabApp] 302 GET /lab? (@172.16.24.234) 0.77ms
+[W 2025-02-13 13:48:11.809 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:11.816 ServerApp] 403 GET /api/kernelspecs?1739472491804 (@172.16.24.234) 7.93ms referer=None
+[W 2025-02-13 13:48:11.817 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:11.818 ServerApp] 403 GET /api/kernelspecs?1739472491807 (@172.16.24.234) 1.02ms referer=None
+[W 2025-02-13 13:48:11.818 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:11.818 ServerApp] 403 GET /api/kernelspecs?1739472491809 (@172.16.24.234) 1.21ms referer=None
+[W 2025-02-13 13:48:11.853 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:11.854 ServerApp] 403 GET /api/kernels?1739472491805 (@172.16.24.234) 1.12ms referer=None
+[W 2025-02-13 13:48:11.855 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:11.856 ServerApp] 403 GET /api/kernels?1739472491807 (@172.16.24.234) 1.32ms referer=None
+[W 2025-02-13 13:48:11.856 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:11.856 ServerApp] 403 GET /api/kernels?1739472491810 (@172.16.24.234) 1.61ms referer=None
+[W 2025-02-13 13:48:11.856 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:11.857 ServerApp] 403 GET /api/kernels?1739472491811 (@172.16.24.234) 1.92ms referer=None
+[W 2025-02-13 13:48:11.857 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:11.857 ServerApp] 403 GET /api/sessions?1739472491812 (@172.16.24.234) 2.23ms referer=None
+[W 2025-02-13 13:48:11.857 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:11.858 ServerApp] 403 GET /api/kernels?1739472491812 (@172.16.24.234) 2.76ms referer=None
+[W 2025-02-13 13:48:11.882 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:11.882 ServerApp] 403 GET /api/sessions?1739472491813 (@172.16.24.234) 1.09ms referer=None
+[W 2025-02-13 13:48:11.883 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:11.883 ServerApp] 403 GET /api/kernels?1739472491840 (@172.16.24.234) 0.64ms referer=None
+[W 2025-02-13 13:48:11.905 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:11.906 ServerApp] 403 GET /api/sessions?1739472491841 (@172.16.24.234) 1.09ms referer=None
+[W 2025-02-13 13:48:11.906 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:11.907 ServerApp] 403 GET /api/kernelspecs?1739472491852 (@172.16.24.234) 0.80ms referer=None
+[W 2025-02-13 13:48:11.907 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:11.907 ServerApp] 403 GET /api/kernelspecs?1739472491853 (@172.16.24.234) 1.06ms referer=None
+[W 2025-02-13 13:48:11.927 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:11.928 ServerApp] 403 GET /api/kernelspecs?1739472491854 (@172.16.24.234) 0.98ms referer=None
+[I 2025-02-13 13:48:11.969 ServerApp] 302 GET / (@172.16.24.234) 0.51ms
+[I 2025-02-13 13:48:11.969 ServerApp] 302 GET / (@172.16.24.234) 0.31ms
+[I 2025-02-13 13:48:12.004 ServerApp] 302 GET / (@172.16.24.234) 0.42ms
+[I 2025-02-13 13:48:12.006 LabApp] 302 GET /lab? (@172.16.24.234) 0.44ms
+[I 2025-02-13 13:48:12.010 LabApp] 302 GET /lab? (@172.16.24.234) 0.43ms
+[I 2025-02-13 13:48:12.039 LabApp] 302 GET /lab? (@172.16.24.234) 0.58ms
+[W 2025-02-13 13:48:12.042 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:12.043 ServerApp] 403 GET /api/kernelspecs?1739472492038 (@172.16.24.234) 0.90ms referer=None
+[W 2025-02-13 13:48:12.053 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:12.054 ServerApp] 403 GET /api/kernelspecs?1739472492050 (@172.16.24.234) 1.01ms referer=None
+[W 2025-02-13 13:48:12.059 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:12.059 ServerApp] 403 GET /api/kernels?1739472492039 (@172.16.24.234) 0.88ms referer=None
+[W 2025-02-13 13:48:12.061 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:12.061 ServerApp] 403 GET /api/kernels?1739472492042 (@172.16.24.234) 0.72ms referer=None
+[W 2025-02-13 13:48:12.062 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:12.063 ServerApp] 403 GET /api/sessions?1739472492042 (@172.16.24.234) 0.95ms referer=None
+[W 2025-02-13 13:48:12.063 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:12.063 ServerApp] 403 GET /api/kernels?1739472492050 (@172.16.24.234) 1.23ms referer=None
+[W 2025-02-13 13:48:12.063 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:12.064 ServerApp] 403 GET /api/kernelspecs?1739472492051 (@172.16.24.234) 1.52ms referer=None
+[W 2025-02-13 13:48:12.064 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:12.064 ServerApp] 403 GET /api/kernels?1739472492052 (@172.16.24.234) 1.81ms referer=None
+[W 2025-02-13 13:48:12.077 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:12.077 ServerApp] 403 GET /api/kernelspecs?1739472492073 (@172.16.24.234) 1.08ms referer=None
+[W 2025-02-13 13:48:12.089 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:12.090 ServerApp] 403 GET /api/sessions?1739472492052 (@172.16.24.234) 1.00ms referer=None
+[W 2025-02-13 13:48:12.098 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:12.098 ServerApp] 403 GET /api/kernelspecs?1739472492060 (@172.16.24.234) 0.84ms referer=None
+[W 2025-02-13 13:48:12.099 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:12.099 ServerApp] 403 GET /api/kernels?1739472492073 (@172.16.24.234) 0.54ms referer=None
+[W 2025-02-13 13:48:12.099 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:12.100 ServerApp] 403 GET /api/kernels?1739472492087 (@172.16.24.234) 0.63ms referer=None
+[W 2025-02-13 13:48:12.100 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:12.101 ServerApp] 403 GET /api/kernelspecs?1739472492094 (@172.16.24.234) 0.58ms referer=None
+[W 2025-02-13 13:48:12.101 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:48:12.101 ServerApp] 403 GET /api/sessions?1739472492088 (@172.16.24.234) 0.53ms referer=None
+[I 2025-02-13 13:48:47.782 ServerApp] 302 GET / (@172.16.24.234) 0.48ms
+[I 2025-02-13 13:48:47.795 LabApp] 302 GET /lab? (@172.16.24.234) 0.64ms
+[I 2025-02-13 13:48:49.030 ServerApp] 302 GET / (@172.16.24.234) 0.50ms
+[I 2025-02-13 13:48:49.033 LabApp] 302 GET /lab? (@172.16.24.234) 0.52ms
+[I 2025-02-13 13:49:05.794 ServerApp] 302 GET / (@172.16.24.234) 0.54ms
+[I 2025-02-13 13:49:05.797 LabApp] 302 GET /lab? (@172.16.24.234) 0.50ms
+[I 2025-02-13 13:49:05.954 ServerApp] Kernel started: 4c7c9660-fba7-46a8-9ea3-91e4b3ae36ae
+[I 2025-02-13 13:49:09.782 ServerApp] Connecting to kernel 4c7c9660-fba7-46a8-9ea3-91e4b3ae36ae.
+[I 2025-02-13 13:49:10.123 ServerApp] 302 GET / (@172.16.24.234) 0.74ms
+[I 2025-02-13 13:49:10.124 ServerApp] 302 GET / (@172.16.24.234) 0.68ms
+[I 2025-02-13 13:49:10.124 ServerApp] 302 GET / (@172.16.24.234) 0.43ms
+[I 2025-02-13 13:49:10.182 LabApp] 302 GET /lab? (@172.16.24.234) 0.83ms
+[I 2025-02-13 13:49:10.184 LabApp] 302 GET /lab? (@172.16.24.234) 0.81ms
+[I 2025-02-13 13:49:10.184 LabApp] 302 GET /lab? (@172.16.24.234) 0.93ms
+[W 2025-02-13 13:49:10.229 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.230 ServerApp] 403 GET /api/kernelspecs?1739472550226 (@172.16.24.234) 1.27ms referer=None
+[W 2025-02-13 13:49:10.231 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.232 ServerApp] 403 GET /api/kernelspecs?1739472550228 (@172.16.24.234) 0.77ms referer=None
+[W 2025-02-13 13:49:10.236 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.237 ServerApp] 403 GET /api/kernelspecs?1739472550233 (@172.16.24.234) 0.72ms referer=None
+[W 2025-02-13 13:49:10.240 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.241 ServerApp] 403 GET /api/kernels?1739472550226 (@172.16.24.234) 0.81ms referer=None
+[W 2025-02-13 13:49:10.241 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.242 ServerApp] 403 GET /api/kernels?1739472550228 (@172.16.24.234) 0.78ms referer=None
+[W 2025-02-13 13:49:10.243 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.243 ServerApp] 403 GET /api/kernels?1739472550229 (@172.16.24.234) 1.06ms referer=None
+[W 2025-02-13 13:49:10.243 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.244 ServerApp] 403 GET /api/sessions?1739472550230 (@172.16.24.234) 1.41ms referer=None
+[W 2025-02-13 13:49:10.244 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.244 ServerApp] 403 GET /api/kernels?1739472550230 (@172.16.24.234) 0.65ms referer=None
+[W 2025-02-13 13:49:10.245 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.246 ServerApp] 403 GET /api/sessions?1739472550231 (@172.16.24.234) 1.27ms referer=None
+[W 2025-02-13 13:49:10.246 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.246 ServerApp] 403 GET /api/kernels?1739472550233 (@172.16.24.234) 1.58ms referer=None
+[W 2025-02-13 13:49:10.246 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.247 ServerApp] 403 GET /api/kernelspecs?1739472550235 (@172.16.24.234) 1.93ms referer=None
+[W 2025-02-13 13:49:10.247 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.247 ServerApp] 403 GET /api/kernels?1739472550235 (@172.16.24.234) 2.30ms referer=None
+[W 2025-02-13 13:49:10.248 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.248 ServerApp] 403 GET /api/sessions?1739472550236 (@172.16.24.234) 2.60ms referer=None
+[W 2025-02-13 13:49:10.248 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.249 ServerApp] 403 GET /api/kernelspecs?1739472550236 (@172.16.24.234) 0.53ms referer=None
+[I 2025-02-13 13:49:10.256 ServerApp] 302 GET / (@172.16.24.234) 0.81ms
+[I 2025-02-13 13:49:10.256 ServerApp] 302 GET / (@172.16.24.234) 0.69ms
+[W 2025-02-13 13:49:10.257 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.258 ServerApp] 403 GET /api/kernelspecs?1739472550242 (@172.16.24.234) 1.22ms referer=None
+[I 2025-02-13 13:49:10.258 ServerApp] 302 GET / (@172.16.24.234) 1.21ms
+[I 2025-02-13 13:49:10.260 LabApp] 302 GET /lab? (@172.16.24.234) 0.43ms
+[I 2025-02-13 13:49:10.261 LabApp] 302 GET /lab? (@172.16.24.234) 0.61ms
+[I 2025-02-13 13:49:10.261 LabApp] 302 GET /lab? (@172.16.24.234) 0.64ms
+[W 2025-02-13 13:49:10.270 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.271 ServerApp] 403 GET /api/kernelspecs?1739472550266 (@172.16.24.234) 0.77ms referer=None
+[W 2025-02-13 13:49:10.272 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.272 ServerApp] 403 GET /api/kernelspecs?1739472550268 (@172.16.24.234) 0.66ms referer=None
+[W 2025-02-13 13:49:10.275 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.276 ServerApp] 403 GET /api/kernelspecs?1739472550272 (@172.16.24.234) 0.73ms referer=None
+[W 2025-02-13 13:49:10.281 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.281 ServerApp] 403 GET /api/kernelspecs?1739472550276 (@172.16.24.234) 1.31ms referer=None
+[W 2025-02-13 13:49:10.282 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.282 ServerApp] 403 GET /api/kernels?1739472550275 (@172.16.24.234) 1.61ms referer=None
+[W 2025-02-13 13:49:10.283 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.283 ServerApp] 403 GET /api/kernels?1739472550267 (@172.16.24.234) 1.14ms referer=None
+[W 2025-02-13 13:49:10.284 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.284 ServerApp] 403 GET /api/kernels?1739472550269 (@172.16.24.234) 1.49ms referer=None
+[W 2025-02-13 13:49:10.284 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.285 ServerApp] 403 GET /api/kernels?1739472550270 (@172.16.24.234) 1.81ms referer=None
+[W 2025-02-13 13:49:10.287 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.288 ServerApp] 403 GET /api/sessions?1739472550270 (@172.16.24.234) 3.02ms referer=None
+[W 2025-02-13 13:49:10.288 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.288 ServerApp] 403 GET /api/kernels?1739472550272 (@172.16.24.234) 3.36ms referer=None
+[W 2025-02-13 13:49:10.288 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.289 ServerApp] 403 GET /api/kernels?1739472550274 (@172.16.24.234) 3.70ms referer=None
+[W 2025-02-13 13:49:10.289 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.289 ServerApp] 403 GET /api/sessions?1739472550274 (@172.16.24.234) 4.09ms referer=None
+[W 2025-02-13 13:49:10.289 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.290 ServerApp] 403 GET /api/kernelspecs?1739472550275 (@172.16.24.234) 4.43ms referer=None
+[W 2025-02-13 13:49:10.290 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.290 ServerApp] 403 GET /api/sessions?1739472550276 (@172.16.24.234) 3.47ms referer=None
+[W 2025-02-13 13:49:10.290 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+      File "/om2/user/jackking/anaconda/envs/superurop/lib/python3.9/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-02-13 13:49:10.291 ServerApp] 403 GET /api/kernelspecs?1739472550278 (@172.16.24.234) 3.64ms referer=None
+[I 2025-02-13 17:28:50.035 ServerApp] Starting buffering for 4c7c9660-fba7-46a8-9ea3-91e4b3ae36ae:045213f9-2fee-4f9d-bed6-ba467771273f
+slurmstepd: error: *** JOB 40314434 ON node102 CANCELLED AT 2025-02-14T01:11:04 DUE TO TIME LIMIT ***

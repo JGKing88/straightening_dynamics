@@ -141,5 +141,4 @@ slurm_outputs/
 miniberta_datasets/
 activations/
 data/
-models/
 datasets/
