@@ -4398,3 +4398,56 @@ gpt2 size: 124.4M parameters
 100%|█████████▉| 878/879 [33:41<00:01,  1.29s/it][A
 100%|██████████| 879/879 [33:42<00:00,  1.21s/it][A100%|██████████| 879/879 [33:42<00:00,  2.30s/it]
 100%|██████████| 1/1 [33:42<00:00, 2022.10s/it]100%|██████████| 1/1 [33:42<00:00, 2022.10s/it]
+validation loss: 5.844240665435791, validation perplexity 345.2403259277344
+  0%|          | 0/881 [00:00<?, ?it/s]  0%|          | 0/881 [00:00<?, ?it/s]
+wandb: WARNING No program path found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+wandb: - 0.021 MB of 0.021 MB uploadedwandb: \ 0.021 MB of 0.043 MB uploadedwandb: | 0.043 MB of 0.043 MB uploadedwandb: 
+wandb: Run history:
+wandb:           train/batch_count ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:                 train/epoch ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb:            train/train_loss █▇▆▄▄▃▃▃▃▃▃▂▂▃▂▃▂▂▂▂▂▂▂▁▂▂▂▂▂▂▂▂▂▂▁▂▁▂▁▂
+wandb:       validation/valid_loss █▁
+wandb: validation/valid_perplexity █▁
+wandb: 
+wandb: Run summary:
+wandb:           train/batch_count 1758
+wandb:                 train/epoch 1.0
+wandb:            train/train_loss 5.47862
+wandb:       validation/valid_loss 5.84424
+wandb: validation/valid_perplexity 345.24033
+wandb: 
+wandb: 🚀 View run 408cabdf at: https://wandb.ai/generalization-bounds/straightening_dynamics/runs/iogxyfmq
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20250227_180322-iogxyfmq/logs
+Traceback (most recent call last):
+  File "/om2/user/jackking/straightening_dynamics//straightening_dynamics/train/run_sweep.py", line 54, in <module>
+    main()
+  File "/om2/user/jackking/straightening_dynamics//straightening_dynamics/train/run_sweep.py", line 50, in main
+    run_sweep(args.base_config, args.sweep_config)
+  File "/om2/user/jackking/straightening_dynamics//straightening_dynamics/train/run_sweep.py", line 35, in run_sweep
+    train(config, run_id)
+  File "/net/vast-storage/scratch/vast/evlab/jackking/straightening_dynamics/straightening_dynamics/train/train.py", line 336, in train
+    test_loss, test_perplexity = evaluate(model, test_dataloader, accelerator)
+  File "/net/vast-storage/scratch/vast/evlab/jackking/straightening_dynamics/straightening_dynamics/train/train.py", line 42, in evaluate
+    outputs = model(batch, labels=batch)
+  File "/om2/user/jackking/anaconda/envs/modular_transformers/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/om2/user/jackking/anaconda/envs/modular_transformers/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/om2/user/jackking/anaconda/envs/modular_transformers/lib/python3.8/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 1271, in forward
+    transformer_outputs = self.transformer(
+  File "/om2/user/jackking/anaconda/envs/modular_transformers/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/om2/user/jackking/anaconda/envs/modular_transformers/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/om2/user/jackking/anaconda/envs/modular_transformers/lib/python3.8/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 1030, in forward
+    inputs_embeds = self.wte(input_ids)
+  File "/om2/user/jackking/anaconda/envs/modular_transformers/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/om2/user/jackking/anaconda/envs/modular_transformers/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/om2/user/jackking/anaconda/envs/modular_transformers/lib/python3.8/site-packages/torch/nn/modules/sparse.py", line 162, in forward
+    return F.embedding(
+  File "/om2/user/jackking/anaconda/envs/modular_transformers/lib/python3.8/site-packages/torch/nn/functional.py", line 2233, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! (when checking argument for argument index in method wrapper_CUDA__index_select)

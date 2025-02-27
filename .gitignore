@@ -142,6 +142,7 @@ miniberta_datasets/
 activations/
 data/
 datasets/
+slurm-*.out
 
 # Model checkpoints and gradients
 saved_models/**/checkpoint_*/

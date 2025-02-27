@@ -209,9 +209,9 @@ def train(config, run_id=None):
         )
 
     # Pass everything to accelerator
-    model, optimizer, train_dataloader, eval_dataloader, lr_scheduler = (
+    model, optimizer, train_dataloader, eval_dataloader, test_dataloader, lr_scheduler = (
         accelerator.prepare(
-            model, optimizer, train_dataloader, eval_dataloader, lr_scheduler
+            model, optimizer, train_dataloader, eval_dataloader, test_dataloader, lr_scheduler
         )
     )
 
