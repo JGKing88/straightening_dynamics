@@ -1,0 +1,22 @@
+data:
+  dataset_path: /om2/user/jackking/straightening_dynamics/data
+  dataset_size: 10M
+model:
+  context_length: 1024
+  name: gpt2
+run:
+  checkpoint: null
+  init_type: normal
+  name: test
+training:
+  batch_size: 32
+  eval_batch_size: 16
+  eval_steps: 500
+  gradient_accumulation_steps: 8
+  learning_rate: 0.0006
+  max_gpu_batch_size: 16
+  num_epochs: 1
+  save_steps: 500
+  scheduler: cosine
+  seed: 42
+  warmup_steps: 100

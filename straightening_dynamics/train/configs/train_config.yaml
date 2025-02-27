@@ -1,0 +1,31 @@
+# Training configuration
+model:
+  name: "gpt2"  # Model name/type
+  context_length: 1024  # Context length for the model
+
+data:
+  dataset_size: "10M"  # Dataset size (e.g., "10M")
+  dataset_path: "/om2/user/jackking/straightening_dynamics/data"  # Path to dataset
+
+initialization:
+  init_type: "normal"  # Initialization type (normal, gaussian)
+  init_std: 0.02  # Standard deviation for normal initialization
+  init_mean: 0.0  # Mean for normal initialization
+
+training:
+  batch_size: 32  # Batch size for training
+  max_gpu_batch_size: 16  # Maximum batch size per GPU
+  eval_batch_size: 16  # Batch size for evaluation
+  gradient_accumulation_steps: 8  # Number of gradient accumulation steps
+  learning_rate: 0.0006  # Learning rate
+  num_epochs: 1  # Number of training epochs
+  seed: 42  # Random seed
+  scheduler: "cosine"  # Learning rate scheduler (linear, cosine)
+  warmup_steps: 100  # Number of warmup steps
+  save_steps: 500  # Save model every X steps
+  eval_steps: 500  # Evaluate model every X steps
+
+run:
+  name: "test"  # Run name, not necessarily used (individually runs are saved with run_id) but might be useful for logging
+  wandb_project_name: "straightening_dynamics"  # Wandb project name
+  checkpoint: null  # Checkpoint to start from (null for none) 

@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=MT_gpt2
 #SBATCH --time=2-12:00:00
-#SBATCH --gres=gpu:a100:2
+#SBATCH --gres=gpu:a100:1
 #SBATCH --ntasks=1
 #SBATCH --mem=200G
 #SBATCH --mail-type=ALL
@@ -9,11 +9,13 @@
 #SBATCH --mail-user=jackking@mit.edu
 #SBATCH --partition=evlab
 
-# module load openmind/cuda/11.3
+# module load openmind/cuda/11.7
 
 source ~/.bashrc
 
-module load openmind8/cuda/11.7
+module load openmind8/cuda/12.1
+
+###wandb login YOUR_API_KEY
 
 # find the user name
 USER_NAME=$(whoami)
