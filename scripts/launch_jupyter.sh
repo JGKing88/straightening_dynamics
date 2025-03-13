@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH -J jupyter
+#SBATCH -J jupyter_dynamics
 #SBATCH --time=0-12:00
 #SBATCH -n 1
 #SBATCH --gres=gpu:a100:1
 ###SBATCH --gres=gpu:1
-#SBATCH --mem 50G
-###SBATCH --partition=evlab
+#SBATCH --mem 100G
+#SBATCH --partition=evlab
 #SBATCH -o jupyter.out
 #SBATCH --exclude=node111
 ###SBATCH --exclude=node105
